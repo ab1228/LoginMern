@@ -1,0 +1,21 @@
+{
+  "name": "LoginMern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ab1228/LoginMern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ab1228/LoginMern/issues"
+  },
+  "homepage": "https://github.com/ab1228/LoginMern#readme"
+}
