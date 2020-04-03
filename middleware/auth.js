@@ -1,4 +1,7 @@
 require('dotenv').config()
+const express = require('express');
+const router = express.Router();
+const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 
 const { JWT } = process.env;
