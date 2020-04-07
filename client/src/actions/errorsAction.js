@@ -7,3 +7,9 @@ export const returnErrors = (msg, status, id = null) => {
         payload: { msg, status, id }
     };
 };
+// CLEAR ERRORS
+export const clearErrors = () => {
+    return {
+        type: CLEAR_ERRORS
+    };
+};
