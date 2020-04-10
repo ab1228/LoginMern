@@ -1,12 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AppNavbar from './components/AppNavbar';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
   return (
-    <div className="App">
+    <Provider store={store}>
+      <Router>
+        <div>
+          <Route path="/" component={AppNavbar} />
 
-    </div>
+
+
+        </div>
+      </Router>
+    </Provider >
   );
 }
 
