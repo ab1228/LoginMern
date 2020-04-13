@@ -57,3 +57,22 @@ export const register = ({ name, email, password }) => dispatch => {
             })
         });
 };
+
+//SETUP CONFIG/HEADERS AND TOKEN
+export const tokenConfig = getState => {
+    ///GET TOKEN FORM LOCAL STORAGE
+    const token = getState().auth.token;
+
+    //HEADERS
+    const config = {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+
+    /// IF TOKEN ADD HEADERS
+    if (token) {
+        config.headers['x-auth-token'] = token;
+    }
+    return config;
+}

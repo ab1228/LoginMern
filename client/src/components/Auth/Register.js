@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { register } from '../../actions/authAction';
 import { clearErrors } from '../../actions/errorsAction';
 import { Link } from 'react-router-dom';
-import "./registerModal.css"
+
 
 class AuthModal extends Component {
 
