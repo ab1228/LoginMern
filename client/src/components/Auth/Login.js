@@ -26,13 +26,13 @@ class Login extends Component {
                                 <div> {this.state.msg ? <div className="alert alert-danger">{this.state.msg}</div> : null}</div>
 
 
-                                <form onSubmit={}>
+                                <form onSubmit={this.onSubmit}>
                                     <div className="input-group form-group">
                                         <div className="input-group-prepend">
                                             <span className="input-group-text"><i className="fas fa-envelope"></i></span>
                                         </div>
                                         <input type="email" className="form-control" placeholder="email" name="email" value={this.state.email}
-                                            onChange={} />
+                                            onChange={this.handleChange} />
 
                                     </div>
                                     <div className="input-group form-group">
@@ -40,7 +40,7 @@ class Login extends Component {
                                             <span className="input-group-text"><i className="fas fa-key"></i></span>
                                         </div>
                                         <input type="password" className="form-control" placeholder="password" name="password" value={this.state.password}
-                                            onChange={} />
+                                            onChange={this.handleChange} />
 
                                     </div>
 
