@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from 'react-redux';
 import store from './store';
 import RegisterModal from './components/Auth/Register';
+import Login from './components/Auth/Login';
+
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/" component={AppNavbar} />
           <div>
             <Route exact path="/register" component={RegisterModal} />
+            <Route exact path="/login" component={Login} />
+
 
           </div>
 
